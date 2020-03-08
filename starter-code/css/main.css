@@ -1,0 +1,102 @@
+body{
+    margin: 0 0;
+}
+
+#container{
+/* display: flex;
+align-content: center; */
+/* justify-content: center; */
+float: left;
+width: 450px;
+margin-top: 70px;
+margin-left: 130px;
+margin-right: 27px;
+}
+
+#PinStyle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4px;
+    text-align: center;
+    width: 280px;
+}
+
+#PinStyle > button{
+    width: 91px;
+    height: 66px;
+    background-color: rgb(252, 248, 248);
+    border: rgba(0, 0, 0, 0.3) solid 2px;
+    font-size: 30px;
+}
+
+#PinStyle #cancel{
+    width: 160px;
+}
+
+#PinStyle #clear{
+    width: 160px;
+}
+
+#PinStyle #enter{
+    width: 160px;
+}
+#intnum{
+    display: flex;
+    align-content: center;
+    /* justify-content: center; */
+    float: left;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    
+}
+
+#intnum > p{
+    background-color: rgb(252, 248, 248);
+    height: 60px;
+    width: 280px;
+    border: rgba(0, 0, 0, 0.3) solid 2px;
+}
+
+#cancelbut{
+    float: right;
+}
+
+#cancelbut > button{
+width: 50px;
+}
+
+#pic{
+    float: left;
+    background-color: rgb(27, 66, 151);
+    width: 55%;
+    height: 600px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+ #pic > img{
+     
+     height: 100px;
+     width: 300px;
+     margin-top: 70px;
+ }
+
+/* #screen__landing{
+     display: flex;
+     justify-content: ;
+     width: 65%;
+    height: 32vh;
+    margin: 20px auto;
+    color: azure;
+    background-color: rgb(19, 39, 153);
+ }
+
+ #LogIn{
+     background-color: rgb(27, 66, 151);
+ }
+
+ #User_Name{
+    background-color: white;
+    margin-top: 5%;
+ }
+*/
