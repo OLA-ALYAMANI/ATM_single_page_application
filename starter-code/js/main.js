@@ -4,49 +4,69 @@ var userinput = {
     baln : "500"
 
 }
+$("#screen__pin").append("<span id = 'To_Right'></span>")
 
-$("<div id = 'container'></div>").appendTo('#screen__pin')
+$("<span id = 'container'></span>").appendTo('#To_Right')
+$("<span id = 'ThePin'></span>").appendTo('#container')
+$("<p id='inp_num'></p>").appendTo("#ThePin")
 
-$("<div id = 'intnum'></div>").appendTo('#container')
-$("<p id='inp_num'> </p>").appendTo("#intnum")
+$("<span id = 'pin_button'></span>").appendTo('#container')
+$("<button class='call_number' id='1' value='1'>1</button>").appendTo("#pin_button")
+$("<button class='call_number' id='2' value='2'>2</button>").appendTo("#pin_button")
+$("<button class='call_number' id='3' value='3'>3</button>").appendTo("#pin_button")
+$("<button class='call_number' id='4' value='4'>4</button>").appendTo("#pin_button")
+$("<button class='call_number' id='5' value='5'>5</button>").appendTo("#pin_button")
+$("<button class='call_number' id='6' value='6'>6</button>").appendTo("#pin_button")
+$("<button class='call_number' id='7' value='7'>7</button>").appendTo("#pin_button")
+$("<button class='call_number' id='8' value='8'>8</button>").appendTo("#pin_button")
+$("<button class='call_number' id='9' value='9'>9</button>").appendTo("#pin_button")
+$("<div class='call_number'></div>").appendTo("#pin_button")
+$("<button class='call_number' id='0' value='0'>0</button>").appendTo("#pin_button")
+$("<div class='call_number'></div>").appendTo("#pin_button")
 
-$("<div id = 'PinStyle'></div>").appendTo('#container')
-$("<button id='1' value='1'>1</button>").appendTo("#PinStyle")
-$("<button id='2' value='2'>2</button>").appendTo("#PinStyle")
-$("<button id='3' value='3'>3</button>").appendTo("#PinStyle")
-//Cancle Button
-$("<button id='cancel'>cancle</button>").appendTo("#PinStyle")
-$("<button id='4' value='4'>4</button>").appendTo("#PinStyle")
-$("<button id='5' value='5'>5</button>").appendTo("#PinStyle")
-$("<button id='6' value='6'>6</button>").appendTo("#PinStyle")
-//Clear Button
-$("<button id='clear'>clear</button>").appendTo("#PinStyle")
-$("<button id='7' value='7'>7</button>").appendTo("#PinStyle")
-$("<button id='8' value='8'>8</button>").appendTo("#PinStyle")
-$("<button id='9' value='9'>9</button>").appendTo("#PinStyle")
-//Enter Button
-$("<button id='enter'>enter</button>").appendTo("#PinStyle")
-$("<button></button>").appendTo("#PinStyle")
-$("<button id='0' value='0'>0</button>").appendTo("#PinStyle")
-$("<button></button>").appendTo("#PinStyle")
+// var CallNum = $(".call_number")
+// var inPut = $("#inp_num").text()
+// var outPut
 
+// CallNum.click(function(e){
+//     for(var i=0; i<4; i++){
+//     $(this).val().addClass(".Click")
+//     outPut[i] += $(this)[i].text()
+//     inPut += outPut[i]
+//     }
+//     // if(outPut.length == 4 ){
+        
+//     // }
+//     // console.log($(this).val())
+// })
+
+//Cancle Button, Clear Button and Enter Button
+$("#container").append("<span id = 'command_span'></span>")
+$("<button class='command_button' id='clear'></button>").appendTo("#command_span")
+$("<button class='command_button' id='cancle'></button>").appendTo("#command_span")
+$("<button class='command_button' id='enter'></button>").appendTo("#command_span")
+
+$("#clear").append("<p id='Yellow'></p>")
+$("#cancle").append("<p id='Red'></p>")
+$("#enter").append("<p id='Green'></p>")
 //The Logo
-$("<div id = 'pic'></div>").appendTo('#screen__pin')
-$("<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Al_Rajhi_Bank_Logo.svg/2000px-Al_Rajhi_Bank_Logo.svg.png'>").appendTo('#pic')
+$("#screen__pin").append("<span id = 'To_Left'></span>")
+$("<span id = 'Logo'></span>").appendTo('#To_Left')
+$("<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Al_Rajhi_Bank_Logo.svg/2000px-Al_Rajhi_Bank_Logo.svg.png'>").appendTo('#Logo')
 
 //Withdrawal Screen
-$("<div id = 'Clock'></div>").appendTo("#screen__landing")
-$("<h3 id = 'time'></h3>").appendTo("#Clock")
+// $("<div id = 'Clock'></div>").appendTo("#screen__landing")
+// $("<h3 id = 'time'></h3>").appendTo("#Clock")
 
-$("<div id = 'LogIn'></div>").appendTo("#screen__landing")
-$("<div id = 'User_Name'></div>").appendTo("#LogIn")
-$("<p id = 'Hi'>Good Morning Ola, How are you to day?</p>").appendTo("#User_Name")
+// $("<div id = 'LogIn'></div>").appendTo("#screen__landing")
+// $("<div id = 'User_Name'></div>").appendTo("#LogIn")
+// $("<p id = 'Hi'>Good Morning Ola, How are you to day?</p>").appendTo("#User_Name")
 
-$("<div id = 'container2'></div>").appendTo("#screen__landing")
-$("<div id = 'Withdrawal_Nump'>SAR </div>").appendTo("#container2")
-$("<div id = 'balancce'></div>").appendTo("#container2")
-$("<button id = 'Withdrawal_but'></button>").appendTo("#container2")
-$("<button id = 'deposit_but'></button>").appendTo("#container2")
+// $("<div id = 'container2'></div>").appendTo("#screen__landing")
+// $("<div id = 'Withdrawal_Nump'>SAR </div>").appendTo("#container2")
+// $("<div id = 'balancce'></div>").appendTo("#container2")
+// $("<button id = 'Withdrawal_but'></button>").appendTo("#container2")
+// $("<button id = 'deposit_but'></button>").appendTo("#container2")
 
 let container = document.querySelector("#time")
 function getTime(){
@@ -77,4 +97,3 @@ for(let i=0; i<(userinput.length)-3; i++){
     })
 }
 }
-
