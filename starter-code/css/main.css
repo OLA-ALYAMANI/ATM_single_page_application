@@ -1,85 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0 0;
 }
 
-#container{
-/* display: flex;
-align-content: center; */
-/* justify-content: center; */
-float: left;
-width: 450px;
-margin-top: 70px;
-margin-left: 130px;
-margin-right: 27px;
+#screen__pin{
+    height: 100%;
 }
 
-#PinStyle{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 4px;
+#To_Right{
+    float: left;
+    width: 40%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#To_Left{
+    float: right;
+    width: 44%;
+    height: 30%;
+}
+
+#ThePin p{
+    width: 12ex;
+    height: 60px;
+    background-color: rgb(252, 248, 248);
+    font-size: 54px;
     text-align: center;
-    width: 280px;
+    border: rgba(0, 0, 0, 0.3) solid 2px;
 }
 
-#PinStyle > button{
+#pin_button{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    width: 40ex;
+}
+
+.call_number{
     width: 91px;
     height: 66px;
     background-color: rgb(252, 248, 248);
     border: rgba(0, 0, 0, 0.3) solid 2px;
     font-size: 30px;
+    text-align: center;
 }
 
-#PinStyle #cancel{
-    width: 160px;
+.Click:hover{
+    background-color: rgb(27, 66, 151);
+    color: white;
 }
 
-#PinStyle #clear{
-    width: 160px;
+#command_span{
+    width: 33ex;
+    height: 66px;
+    display: flex;
+    flex-direction: column;
+    transform: translate(45ex, -43ex);
 }
 
-#PinStyle #enter{
-    width: 160px;
+.command_button{
+    height: 50ex;
+    background-color: rgb(252, 248, 248);
+    border: rgba(0, 0, 0, 0.3) solid 2px;
+    margin: 11px;
 }
+
+#Yellow{
+    background-color: yellow;
+    height: 1ex;
+    width: 26ex;
+    margin-top: 5ex;
+    margin-left: 4px;
+    margin-right: 5px;
+}
+
+#Red{
+    background-color: red;
+    height: 1ex;
+    width: 26ex;
+    margin-top: 6ex;
+    margin-left: 4px;
+    margin-right: 5px;
+}
+
+#Green{
+    background-color: green;
+    height: 1ex;
+    width: 26ex;
+    margin-top: 6ex;
+    margin-left: 4px;
+    margin-right: 5px;
+}
+
 #intnum{
     display: flex;
     align-content: center;
-    /* justify-content: center; */
-    float: left;
+    float: right;
     margin-top: 60px;
     margin-bottom: 10px;
-    
 }
 
-#intnum > p{
+#intnum p{
     background-color: rgb(252, 248, 248);
     height: 60px;
     width: 280px;
     border: rgba(0, 0, 0, 0.3) solid 2px;
 }
 
-#cancelbut{
-    float: right;
-}
-
-#cancelbut > button{
+#cancelbut button{
 width: 50px;
 }
 
-#pic{
-    float: left;
+#Logo{
+    
     background-color: rgb(27, 66, 151);
-    width: 55%;
-    height: 600px;
+    height: 91ex;
     display: flex;
-    align-content: center;
     justify-content: center;
+    align-items: center;
 }
- #pic > img{
-     
-     height: 100px;
-     width: 300px;
-     margin-top: 70px;
- }
+
+ #Logo img{
+     height: 20ex;
+     width: 50ex;
+}
 
 /* #screen__landing{
      display: flex;
@@ -89,13 +138,13 @@ width: 50px;
     margin: 20px auto;
     color: azure;
     background-color: rgb(19, 39, 153);
- }
+ }*/
 
  #LogIn{
      background-color: rgb(27, 66, 151);
  }
 
- #User_Name{
+ /*#User_Name{
     background-color: white;
     margin-top: 5%;
  }
