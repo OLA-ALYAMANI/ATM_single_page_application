@@ -24,6 +24,7 @@ $("<div class='call_number'></div>").appendTo("#pin_button")
 $("<button class='call_number' id='0' value='0'>0</button>").appendTo("#pin_button")
 $("<div class='call_number'></div>").appendTo("#pin_button")
 
+<<<<<<< HEAD
 var CallNum = $(".call_number")
 var inPut = $("#inp_num")
 var outPut
@@ -39,6 +40,23 @@ CallNum.click(function(e){
     // }
     // console.log($(this).val())
 })
+=======
+// var CallNum = $(".call_number")
+// var inPut = $("#inp_num").text()
+// var outPut
+
+// CallNum.click(function(e){
+//     for(var i=0; i<4; i++){
+//     $(this).val().addClass(".Click")
+//     outPut[i] += $(this)[i].text()
+//     inPut += outPut[i]
+//     }
+//     // if(outPut.length == 4 ){
+        
+//     // }
+//     // console.log($(this).val())
+// })
+>>>>>>> d239ae780a543adff408f4553fb7e6762883878d
 
 //Cancle Button, Clear Button and Enter Button
 $("#container").append("<span id = 'command_span'></span>")
@@ -97,4 +115,3 @@ for(let i=0; i<(userinput.length)-3; i++){
     })
 }
 }
-
