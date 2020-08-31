@@ -1,22 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../starter-code/css/main.css">
     <title>ATM Interface</title>
 </head>
+
 <body>
     <!-- Home screen, this screen is for insert card -->
 
     <div id="screen__pin">
+        <span id='To_Right'>
+            <span id='ThePin'>
+                <input type="text" id="inp_num">
+            </span>
+            <span id='container'>
+                <span id='pin_button'>
+                    <button class='call_number' id='1' value='1'>1</button>
+                    <button class='call_number' id='2' value='2'>2</button>
+                    <button class='call_number' id='3' value='3'>3</button>
+                    <button class="Operating_buttons cancle"></button>
+                    <button class='call_number' id='4' value='4'>4</button>
+                    <button class='call_number' id='5' value='5'>5</button>
+                    <button class='call_number' id='6' value='6'>6</button>
+                    <button class="Operating_buttons delete"></button>
+                    <button class='call_number' id='7' value='7'>7</button>
+                    <button class='call_number' id='8' value='8'>8</button>
+                    <button class='call_number' id='9' value='9'>9</button>
+                    <button class="Operating_buttons accept"></button>
+                    <div class='call_number'></div>
+                    <button class='call_number' id='0' value='0'>0</button>
+                    <div class='call_number'></div>
+                </span>
+            </span>
+        </span>
+        <span id='To_Left'>
+            <span id='Logo'>
+                <img
+                    src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Al_Rajhi_Bank_Logo.svg/2000px-Al_Rajhi_Bank_Logo.svg.png'>
+            </span>
+        </span>
+    </div>
 
-    </div>
-    
     <div id="screen__landing">
-        
+        <div id="date_time">
+            <div id="Time"></div>
+            <div id="Date">Tuestday</div>
+        </div>
+        <div id="dashborde">
+            <div id="message-tap">
+                <p>Good Morning "name", How are you today?</p>
+            </div>
+            <div id="window">
+                <span id="amount_but">SAR</span>
+                <button id="balance_but">Balance</button>
+                <button id="withdraw_but">Withdraw</button>
+                <button id="deposit_but">Deposit</button>
+            </div>
+        </div>
     </div>
-    
+
     <div id="screen__withdrawal">
 
     </div>
@@ -27,8 +72,9 @@
     <div id="screen__balance">
 
     </div>
-<script src="../starter-code/js/jQuery.js"></script>
-<script src="../starter-code/js/main.js"></script>
-    
+    <script src="../starter-code/js/jQuery.js"></script>
+    <script src="../starter-code/js/main.js"></script>
+
 </body>
+
 </html>

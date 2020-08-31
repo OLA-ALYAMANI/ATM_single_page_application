@@ -1,76 +1,93 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid grey;
 }
 
-body{
-    margin: 0 0;
+#screen__pin {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 57em;
 }
 
-#screen__pin{
-    height: 100%;
+#To_Right,
+#To_Left {
+  width: auto;
 }
 
-#To_Right{
-    float: left;
-    width: 40%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#Logo {
+  background-color: rgb(27, 66, 151);
+  height: 57em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#To_Left{
-    float: right;
-    width: 44%;
-    height: 30%;
+#Logo img {
+  height: 20ex;
+  width: 50ex;
 }
 
-#ThePin p{
-    width: 12ex;
-    height: 60px;
-    background-color: rgb(252, 248, 248);
-    font-size: 54px;
-    text-align: center;
-    border: rgba(0, 0, 0, 0.3) solid 2px;
+#ThePin,
+#container {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#pin_button{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
-    width: 40ex;
+#inp_num {
+  width: 20ex;
+  height: 5ex;
+  margin-bottom: 9px;
 }
 
-.call_number{
-    width: 91px;
-    height: 66px;
-    background-color: rgb(252, 248, 248);
-    border: rgba(0, 0, 0, 0.3) solid 2px;
-    font-size: 30px;
-    text-align: center;
+#pin_button {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 150px;
+  gap: 15px;
 }
 
-.Click:hover{
-    background-color: rgb(27, 66, 151);
-    color: white;
+.call_number,
+.Operating_buttons,
+#inp_num {
+  background-color: rgb(252, 248, 248);
+  border: rgba(0, 0, 0, 0.3) solid 2px;
+  font-size: 30px;
+  text-align: center;
 }
 
-#command_span{
-    width: 33ex;
-    height: 66px;
-    display: flex;
-    flex-direction: column;
-    transform: translate(45ex, -43ex);
+.call_number {
+  width: 82px;
+  height: 66px;
 }
 
-.command_button{
-    height: 50ex;
-    background-color: rgb(252, 248, 248);
-    border: rgba(0, 0, 0, 0.3) solid 2px;
-    margin: 11px;
+.Operating_buttons {
+  width: 155px;
 }
 
-#Yellow{
+.Click:hover {
+  background-color: rgb(27, 66, 151);
+  color: white;
+}
+
+#command_span {
+  width: 33ex;
+  height: 66px;
+  display: flex;
+  flex-direction: column;
+  transform: translate(45ex, -43ex);
+}
+
+.command_button {
+  height: 50ex;
+  background-color: rgb(252, 248, 248);
+  border: rgba(0, 0, 0, 0.3) solid 2px;
+  margin: 11px;
+}
+
+/*#Yellow{
     background-color: yellow;
     height: 1ex;
     width: 26ex;
@@ -114,38 +131,37 @@ body{
 
 #cancelbut button{
 width: 50px;
+} */
+
+#date_time {
+  display: flex;
+  justify-content: flex-end;
 }
 
-#Logo{
-    
-    background-color: rgb(27, 66, 151);
-    height: 91ex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#dashborde {
+  background-color: rgb(27, 66, 151);
 }
 
- #Logo img{
-     height: 20ex;
-     width: 50ex;
+#message-tap {
+  color: #ffffff;
+  margin-top: 9px;
+  font-size: 4ex;
 }
 
-/* #screen__landing{
-     display: flex;
-     justify-content: ;
-     width: 65%;
-    height: 32vh;
-    margin: 20px auto;
-    color: azure;
-    background-color: rgb(19, 39, 153);
- }*/
+#window {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  gap: 15px;
+}
 
- #LogIn{
-     background-color: rgb(27, 66, 151);
- }
+/* #amount_but, #balance_but {
+  width: 50ex;
+  height: 30ex;
+}
 
- /*#User_Name{
-    background-color: white;
-    margin-top: 5%;
- }
-*/
+
+#withdraw_but, #deposit_but {
+  width: 30ex;
+  height: 20ex;
+} */
+
