@@ -1,5 +1,5 @@
 var userinput = {
-    name: "ola",
+    name: "Ola",
     pass: 9854,
     baln: "500"
 
@@ -93,25 +93,22 @@ function getTime() {
 //     // console.log($(this).val())
 // })
 
-// $("#screen__landing").hide();
 $("#enter").click(() => {
     $("#screen__pin").hide();
+    $("#screen__landing").show();
 })
 
+$("#balance_btn").click(() => {
+    $("#screen__landing").hide();
+    $("#screen__balance").show();
+})
 
-function PIN() {
-    for (let i = 0; i < (userinput.length) - 3; i++) {
-        $("#" + i).click(function (e) {
-            if (pass.length < 4) {
-                var numLis = e.target.value
-                $("#inp_num").html(numLis)
-                $("#inp_num").show()
-                $("screen__pin").hide()
-            }
-            else {
-                console.log("Pleas agin")
-            }
-            $("#screen__landing").show()
-        })
-    }
-}
+$("#withdraw_btn").click(() => {
+    $("#screen__landing").hide();
+    $("#screen__withdrawal").show();
+})
+
+$("#deposit_btn").click(() => {
+    $("#screen__landing").hide();
+    $("#screen__deposit").show();
+})
