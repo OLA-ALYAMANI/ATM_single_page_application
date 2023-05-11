@@ -23,23 +23,23 @@
 
                 <div class="selected">
                     <div id='pin_button'>
-                            <div class="pin_num" id="1">1</div>
-                            <div class="pin_num" id="2">2</div>
-                            <div class="pin_num" id="3">3</div>
-                        
-                            <div class="pin_num" id="4">4</div>
-                            <div class="pin_num" id="5">5</div>
-                            <div class="pin_num" id="6">6</div>
+                        <div class="pin_num" id="1">1</div>
+                        <div class="pin_num" id="2">2</div>
+                        <div class="pin_num" id="3">3</div>
 
-                            <div class="pin_num" id="7">7</div>
-                            <div class="pin_num" id="8">8</div>
-                            <div class="pin_num" id="9">9</div>
+                        <div class="pin_num" id="4">4</div>
+                        <div class="pin_num" id="5">5</div>
+                        <div class="pin_num" id="6">6</div>
 
-                            <div class="emt_btn"></div>
-                            <div class="pin_num" id="0">0</div>
-                            <div class="emt_btn"></div>
+                        <div class="pin_num" id="7">7</div>
+                        <div class="pin_num" id="8">8</div>
+                        <div class="pin_num" id="9">9</div>
+
+                        <div class="emt_btn"></div>
+                        <div class="pin_num" id="0">0</div>
+                        <div class="emt_btn"></div>
                     </div>
-                    <div class="opration_btn">
+                    <div id="opration_btn">
                         <div id="cancel">
                             <div id="cancel_btn_color"></div>
                         </div>
@@ -62,26 +62,35 @@
     </div>
 
     <div id="screen__landing">
-        <div id="date_time">
+
+        <div id="date_time_item">
+
             <div id="Time"></div>
             <br>
             <div id="Date"></div>
+
         </div>
-        <div id="dashborde">
+
+        <div id="dashboard">
+
             <div id="message-tap">
                 <!-- <p>Good Morning "name", How are you today?</p> -->
             </div>
             <div id="window">
-                <!-- <span id="amount_but">SAR</div>
-                <button id="balance_but">Balance</button>
-                <button id="withdraw_but">Withdraw</button>
-                <button id="deposit_but">Deposit</button> -->
-                <div id="amount">SAR</div>
-                <div id="balance_but">Balance</div>
-                <div id="withdraw_but">Withdraw</div>
-                <div id="deposit_but">Deposit</div>
+                <div id="anmount__screen">
+                    <!-- <div id="amount_num">50</div> -->
+                    <div id="amount">SAR</div>
+                </div>
+
+                <div id="processes__btn">
+                    <div id="balance_btn">Balance</div>
+                    <div id="withdraw_btn">Withdraw</div>
+                    <div id="deposit_btn">Deposit</div>
+                </div>
             </div>
+
         </div>
+
     </div>
 
     <div id="screen__withdrawal">
@@ -92,7 +101,14 @@
 
     </div>
     <div id="screen__balance">
-
+        <div id="balance_text">
+            <p>Balance</p>
+        </div>
+        <div id="balanc_num">
+            <!-- <div id="amount_num">50</div> -->
+            <div id="currency">SAR</div>
+        </div>
+        <div id="back_btn"></div>
     </div>
     <script src="../starter-code/js/jQuery.js"></script>
     <script src="../starter-code/js/main.js"></script>
