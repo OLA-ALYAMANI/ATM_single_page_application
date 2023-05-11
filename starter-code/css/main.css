@@ -2,69 +2,103 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
 }
 
 #screen__pin {
   display: grid;
-  grid-template-columns: 50% 50%;
-  height: 57em;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
 }
 
-#To_Right,
-#To_Left {
-  width: auto;
+form{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 #Logo {
-  background-color: rgb(27, 66, 151);
+  background-color: #134197;
   height: 57em;
+  padding-top: 9rem;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 #Logo img {
-  height: 20ex;
-  width: 50ex;
+  height: 10em;
+  width: 30em;
 }
 
-#ThePin,
-#container {
-  width: auto;
+#error_messag {
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+#box{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#inp_num {
-  width: 20ex;
-  height: 5ex;
-  margin-bottom: 9px;
-}
-
-#pin_button {
-  display: grid;
-  grid-template-columns: 80px 80px 80px 150px;
-  gap: 15px;
-}
-
-.call_number,
-.Operating_buttons,
-#inp_num {
-  background-color: rgb(252, 248, 248);
+#text_box {
+  width: 20rem;
+  height: 5rem;
+  margin: 7px;
   border: rgba(0, 0, 0, 0.3) solid 2px;
-  font-size: 30px;
   text-align: center;
 }
 
-.call_number {
-  width: 82px;
-  height: 66px;
+.selected{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-left: 13.4rem;
 }
 
-.Operating_buttons {
-  width: 155px;
+#pin_button {
+  font-size: 4rem;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 6.9px;
+}
+
+.pin_num,
+.emt_btn {
+  border: rgba(0, 0, 0, 0.3) solid 2px;
+  text-align: center;
+  height: 5.4rem;
+  width: 6.4rem;
+}
+
+#cancel,
+#clear,
+#enter {
+  width: 150px;
+  height: 60px;
+  border: rgba(0, 0, 0, 0.3) solid 2px;
+  margin: 5px;
+}
+
+#cancel_btn_color,
+#clear_btn_color,
+#enter_btn_color {
+  margin: 41px 4px 0px 4px;
+  height: 11px;
+}
+
+#cancel_btn_color {
+  background-color: red;
+}
+
+#clear_btn_color {
+  background-color: darkorange;
+}
+
+#enter_btn_color {
+  background-color: green;
 }
 
 .Click:hover {
@@ -87,52 +121,6 @@
   margin: 11px;
 }
 
-/*#Yellow{
-    background-color: yellow;
-    height: 1ex;
-    width: 26ex;
-    margin-top: 5ex;
-    margin-left: 4px;
-    margin-right: 5px;
-}
-
-#Red{
-    background-color: red;
-    height: 1ex;
-    width: 26ex;
-    margin-top: 6ex;
-    margin-left: 4px;
-    margin-right: 5px;
-}
-
-#Green{
-    background-color: green;
-    height: 1ex;
-    width: 26ex;
-    margin-top: 6ex;
-    margin-left: 4px;
-    margin-right: 5px;
-}
-
-#intnum{
-    display: flex;
-    align-content: center;
-    float: right;
-    margin-top: 60px;
-    margin-bottom: 10px;
-}
-
-#intnum p{
-    background-color: rgb(252, 248, 248);
-    height: 60px;
-    width: 280px;
-    border: rgba(0, 0, 0, 0.3) solid 2px;
-}
-
-#cancelbut button{
-width: 50px;
-} */
-
 #date_time {
   display: flex;
   justify-content: flex-end;
@@ -153,15 +141,3 @@ width: 50px;
   grid-template-columns: 50px 50px;
   gap: 15px;
 }
-
-/* #amount_but, #balance_but {
-  width: 50ex;
-  height: 30ex;
-}
-
-
-#withdraw_but, #deposit_but {
-  width: 30ex;
-  height: 20ex;
-} */
-
