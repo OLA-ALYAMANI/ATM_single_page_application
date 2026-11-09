@@ -14,42 +14,52 @@
     <div id="screen__pin">
         <div class='container'>
 
-            <form>
-                <p id="error_messag">Theif! Theif!! Theif!!!</p>
+            <form class="pin_form">
+                <p class="error_message hidden">Theif! Theif!! Theif!!!</p>
 
-                <div id="box">
-                    <input type="text" id="text_box" name="display">
-                </div>
+                <div type="text" class="text_box" name="display"></div>
 
                 <div class="selected">
-                    <div id='pin_button'>
-                        <div class="pin_num" id="1">1</div>
-                        <div class="pin_num" id="2">2</div>
-                        <div class="pin_num" id="3">3</div>
+                    <div class='pin_button'>
+                        <div class="pin_num" value="1" onclick="AddPin()">1</div>
+                        <div class="pin_num" value="2">2</div>
+                        <div class="pin_num" value="3">3</div>
 
-                        <div class="pin_num" id="4">4</div>
-                        <div class="pin_num" id="5">5</div>
-                        <div class="pin_num" id="6">6</div>
+                        <div id="pin_cancel_btn">
+                            <div class="cancel_btn_color"></div>
+                        </div>
 
-                        <div class="pin_num" id="7">7</div>
-                        <div class="pin_num" id="8">8</div>
-                        <div class="pin_num" id="9">9</div>
+                        <div class="pin_num" value="4">4</div>
+                        <div class="pin_num" value="5">5</div>
+                        <div class="pin_num" value="6">6</div>
+
+                        <div id="pin_clear_btn">
+                            <div class="clear_btn_color"></div>
+                        </div>
+
+                        <div class="pin_num" value="7">7</div>
+                        <div class="pin_num" value="8">8</div>
+                        <div class="pin_num" value="9">9</div>
+
+                        <div id="pin_enter_btn">
+                            <div class="enter_btn_color"></div>
+                        </div>
 
                         <div class="emt_btn"></div>
-                        <div class="pin_num" id="0">0</div>
+                        <div class="pin_num" value="0">0</div>
                         <div class="emt_btn"></div>
                     </div>
-                    <div id="opration_btn">
-                        <div id="cancel">
-                            <div id="cancel_btn_color"></div>
+                    <!-- <div class="operation_btn">
+                        <div id="pin_cancel_btn">
+                            <div class="cancel_btn_color"></div>
                         </div>
-                        <div id="clear">
-                            <div id="clear_btn_color"></div>
+                        <div id="pin_clear_btn">
+                            <div class="clear_btn_color"></div>
                         </div>
-                        <div id="enter">
-                            <div id="enter_btn_color"></div>
+                        <div id="pin_enter_btn">
+                            <div class="enter_btn_color"></div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </form>
         </div>
@@ -63,26 +73,26 @@
 
     <div id="screen__landing">
 
-        <div id="date_time_item">
+        <div class="date_time_item">
 
-            <div id="Time"></div>
+            <div class="Time"></div>
             <br>
-            <div id="Date"></div>
+            <div class="Date"></div>
 
         </div>
 
-        <div id="dashboard">
+        <div class="dashboard">
 
-            <div id="message-tap">
+            <div class="message-tap">
                 <!-- <p>Good Morning "name", How are you today?</p> -->
             </div>
-            <div id="window">
-                <div id="anmount__screen">
-                    <!-- <div id="amount_num">50</div> -->
-                    <div id="amount">SAR</div>
+            <div class="window">
+                <div class="anmount__screen">
+                    <div id="anmount_num"></div>
+                    <div class="currency">SAR</div>
                 </div>
 
-                <div id="processes__btn">
+                <div class="processes__btn">
                     <div id="balance_btn">Balance</div>
                     <div id="withdraw_btn">Withdraw</div>
                     <div id="deposit_btn">Deposit</div>
@@ -94,22 +104,130 @@
     </div>
 
     <div id="screen__withdrawal">
+        <div class='container'>
 
+            <div class="withdrawal_title">
+                <p>Withdraw</p>
+            </div>
+
+            <form class="withdra_form">
+                <p class="warning_message">There is not enough money</p>
+
+                <input type="text" class="text_box" name="display">
+
+                <div class="withdra_pin_selected">
+                    <div class='pin_button'>
+                        <div class="pin_num" value="1">1</div>
+                        <div class="pin_num" value="2">2</div>
+                        <div class="pin_num" value="3">3</div>
+
+                        <div class="pin_num" value="4">4</div>
+                        <div class="pin_num" value="5">5</div>
+                        <div class="pin_num" value="6">6</div>
+
+                        <div class="pin_num" value="7">7</div>
+                        <div class="pin_num" value="8">8</div>
+                        <div class="pin_num" value="9">9</div>
+
+                        <div class="emt_btn"></div>
+                        <div class="pin_num" value="0">0</div>
+                        <div class="emt_btn"></div>
+                    </div>
+
+                    <!-- <div class="operation_btn">
+                        <div id="withdraw_cancel_btn">
+                            <div class="cancel_btn_color"></div>
+                        </div>
+                        <div id="withdraw_clear_btn">
+                            <div class="clear_btn_color"></div>
+                        </div>
+                        <div id="withdraw_enter_btn">
+                            <div class="enter_btn_color"></div>
+                        </div>
+                    </div> -->
+                </div>
+            </form>
+            <div id="withdraw_back_btn"></div>
+        </div>
     </div>
 
     <div id="screen__deposit">
+        <div class="container">
+
+            <div class="deposit_title">
+                <p>Deposit</p>
+            </div>
+
+            <form action="" class="deposit_form">
+                <p class="deposit_message">The deposit process has been successful</p>
+
+                <input type="text" class="text_box">
+
+                <div class="deposit_pin_selected">
+                    <div class="pin_button">
+                        <div class="pin_num" value="1">1</div>
+                        <div class="pin_num" value="2">2</div>
+                        <div class="pin_num" value="3">3</div>
+
+                        <div class="pin_num" value="4">4</div>
+                        <div class="pin_num" value="5">5</div>
+                        <div class="pin_num" value="6">6</div>
+
+                        <div class="pin_num" value="7">7</div>
+                        <div class="pin_num" value="8">8</div>
+                        <div class="pin_num" value="9">9</div>
+
+                        <div class="emt_btn"></div>
+                        <div class="pin_num" value="0">0</div>
+                        <div class="emt_btn"></div>
+                    </div>
+
+                    <!-- <div class="operation_btn">
+                        <div id="deposit_cancel_btn">
+                            <div class="cancel_btn_color"></div>
+                        </div>
+                        <div id="deposit_clear_btn">
+                            <div class="clear_btn_color"></div>
+                        </div>
+                        <div id="deposit_enter_btn">
+                            <div class="enter_btn_color"></div>
+                        </div>
+                    </div> -->
+                </div>
+            </form>
+            <div id="deposit_back_btn"></div>
+        </div>
+    </div>
+
+    <div id="screen__balance">
+
+        <div class="date_time_item">
+
+            <div class="Time"></div>
+            <br>
+            <div class="Date"></div>
+
+        </div>
+        <div id="balance__dashboard">
+
+            <div class="message-tap">
+                <!-- <p>Good Morning "name", How are you today?</p> -->
+            </div>
+
+            <div class="balance_box">
+                <div class="balance_text">
+                    <p>Balance</p>
+                </div>
+                <div class="balance_screen">
+                    <div id="balance_num"></div>
+                    <div class="currency">SAR</div>
+                </div>
+            </div>
+            <div id="balance_back_btn"></div>
+        </div>
 
     </div>
-    <div id="screen__balance">
-        <div id="balance_text">
-            <p>Balance</p>
-        </div>
-        <div id="balanc_num">
-            <!-- <div id="amount_num">50</div> -->
-            <div id="currency">SAR</div>
-        </div>
-        <div id="back_btn"></div>
-    </div>
+
     <script src="../starter-code/js/jQuery.js"></script>
     <script src="../starter-code/js/main.js"></script>
 

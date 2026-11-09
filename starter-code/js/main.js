@@ -1,14 +1,79 @@
 var userinput = {
     name: "Ola",
-    pass: 9854,
+    pin: 9854,
     baln: "500"
-
 }
 
-// numberbutton = document.querySelectorAll(".call_number");
+var input = document.getElementsByClassName("text_box"),
+    output = null,
+    number = Array.from(document.getElementsByClassName("pin_num")),
+    select_num = null,
+    cancel = document.getElementById("#pin_cancel_btn"),
+    clear = document.getElementById("#pin_clear_btn"),
+    enter = document.getElementById("#pin_enter_btn"),
+    pin = userinput.pass,
+    resultDisplay = false;
+
+
+
+// function the_numbers() {
+//     for (let r = 0; r < number.length; r++) {
+//         for (let c = 0; c < 4; c++) {
+//             let called_num = number[r][c];
+//             $("#pin_enter_btn").click(() => {
+//                 if (called_num[r][c] != userinput.pass) {
+//                     $(".error_message").show();
+//                 }
+//                 else {
+//                     $("#screen__pin").hide();
+//                     $("#screen__landing").show();
+
+//                 }
+//             })
+//         }
+//     }
+// }
+
+function SelectedNumber() {
+    if (select_num = null) {
+        select_num = number;
+    }
+}
+
+number.map(pin_num => {
+    number.addEventListener('click', (e) => {
+        console.log("cliked");
+        console.log(e);
+        console.log(e.target)
+    })
+})
+console.log(selectNumber())
+// Show and Hide pages
+
+// $("#screen__landing").hide();
+// $("#screen__balance").hide();
+// $("#screen__withdrawal").hide();
+// $("#screen__deposit").hide();
+
+
+
+$("#balance_btn").click(() => {
+    $("#screen__landing").hide();
+    $("#screen__balance").show();
+})
+
+$("#withdraw_btn").click(() => {
+    $("#screen__landing").hide();
+    $("#screen__withdrawal").show();
+})
+
+$("#deposit_btn").click(() => {
+    $("#screen__landing").hide();
+    $("#screen__deposit").show();
+})
 
 // Welcom Tag
-$('#message-tap').append('<p>Good Morning ' + userinput.name + ', How are you today?</p>');
+$('.message-tap').append('<p>Good Morning ' + userinput.name + ', How are you today?</p>');
 
 // The time
 let currentDate = new Date();
@@ -52,11 +117,11 @@ let mid = 'pm';
 if (minutes < 10) { minutes = "0" + minutes; }
 if (hours < 12) { mid = 'am'; }
 
-$('#Time').append("<p>" + hours + ":" + minutes + " " + mid + "</p>");
-$('#Date').append("<p>" + dated + "</p>");
+$('.Time').append("<p>" + hours + ":" + minutes + " " + mid + "</p>");
+$('.Date').append("<p>" + dated + "</p>");
 
 // Tims
-let container = document.querySelector("#Time")
+let container = document.querySelector(".Time")
 function getTime() {
     let data = new Date()
     let year = data.getFullYear()//to make the second stel work
@@ -93,22 +158,18 @@ function getTime() {
 //     // console.log($(this).val())
 // })
 
-$("#enter").click(() => {
-    $("#screen__pin").hide();
+// Back Button
+$("#withdraw_back_btn").click(function () {
+    $("#screen__withdrawal").hide();
     $("#screen__landing").show();
 })
 
-$("#balance_btn").click(() => {
-    $("#screen__landing").hide();
-    $("#screen__balance").show();
+$("#deposit_back_btn").click(function () {
+    $("#screen__deposit").hide();
+    $("#screen__landing").show();
 })
 
-$("#withdraw_btn").click(() => {
-    $("#screen__landing").hide();
-    $("#screen__withdrawal").show();
-})
-
-$("#deposit_btn").click(() => {
-    $("#screen__landing").hide();
-    $("#screen__deposit").show();
+$("#balance_back_btn").click(() => {
+    $("#screen__balance").hide();
+    $("#screen__landing").show();
 })
